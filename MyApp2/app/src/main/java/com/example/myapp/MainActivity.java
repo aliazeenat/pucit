@@ -13,26 +13,24 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
     TextView txt;
-    Button b1,b2,b3,b4,b5,b6,b7,b8;
+    Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         txt = (TextView) findViewById(R.id.app);
-        Button cl1 = (Button) findViewById(R.id.Red);
-        Button cl2 = (Button) findViewById(R.id.Black);
-        Button cl3 = (Button) findViewById(R.id.Pink);
-        Button cl4 = (Button) findViewById(R.id.Purple);
-        Button cl5 = (Button) findViewById(R.id.Blue);
-        Button cl6 = (Button) findViewById(R.id.Green);
-        Button cl7= (Button) findViewById(R.id.Yellow);
-        Button cl8  = (Button) findViewById(R.id.Grey);
-        Button cl9= (Button) findViewById(R.id.Brown);
-        Button cl10  = (Button) findViewById(R.id.Orange);
+        b1 = (Button) findViewById(R.id.Red);
+        b2 = (Button) findViewById(R.id.Black);
+        b3 = (Button) findViewById(R.id.Pink);
+        b4 = (Button) findViewById(R.id.Purple);
+        b5 = (Button) findViewById(R.id.Blue);
+        b6 = (Button) findViewById(R.id.Green);
+        b7= (Button) findViewById(R.id.Yellow);
+        b8  = (Button) findViewById(R.id.Grey);
+        b9= (Button) findViewById(R.id.Brown);
+        b10  = (Button) findViewById(R.id.Orange);
         final MediaPlayer mp1= MediaPlayer.create(getApplicationContext(), R.raw.red);
         final MediaPlayer mp2= MediaPlayer.create(getApplicationContext(), R.raw.blue);
         final MediaPlayer mp3= MediaPlayer.create(getApplicationContext(), R.raw.green);
@@ -49,50 +47,39 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                switch (v.getId()) {
-                    case R.id.Orange:
-                        mp6.start();
-                        break;
-                    case R.id.Red:
-                        mp1.start();
-                        break;
-                    case R.id.Blue:
-                        mp2.start();
-                        break;
-                    case R.id.Yellow:
-                        mp9.start();
-                        break;
-                    case R.id.Pink:
-                        mp7.start();
-                        break;
-                    case R.id.Brown:
-                        mp8.start();
-                        break;
-                    case R.id.Grey:
-                        mp10.start();
-                        break;
-                    case R.id.Black:
-                        mp5.start();
-                        break;
-                    case R.id.Purple:
-                        mp4.start();
-                        break;
-                    case R.id.Green:
-                        mp3.start();
-                        break;
-                }
+                if(v.getId()==R.id.Orange)
+                    mp6.start();
+                else if(v.getId()==R.id.Red)
+                    mp1.start();
+                else if(v.getId()==R.id.Blue)
+                    mp2.start();
+                else if(v.getId()==R.id.Yellow)
+                    mp9.start();
+                else if(v.getId()==R.id.Pink)
+                    mp7.start();
+                else if(v.getId()==R.id.Brown)
+                    mp8.start();
+                else if(v.getId()==R.id.Grey)
+                    mp10.start();
+                else if(v.getId()==R.id.Black)
+                    mp5.start();
+                else if(v.getId()==R.id.Purple)
+                    mp4.start();
+                else if(v.getId()==R.id.Green)
+                    mp3.start();
+
             }
 
     };
-        cl1.setOnClickListener(l);
-        cl2.setOnClickListener(l);
-        cl3.setOnClickListener(l);
-        cl4.setOnClickListener(l);
-        cl5.setOnClickListener(l);
-        cl6.setOnClickListener(l);
-        cl7.setOnClickListener(l);
-        cl8.setOnClickListener(l);
-        cl9.setOnClickListener(l);
-        cl10.setOnClickListener(l);
+        b1.setOnClickListener(l);
+        b2.setOnClickListener(l);
+        b3.setOnClickListener(l);
+        b4.setOnClickListener(l);
+        b5.setOnClickListener(l);
+        b6.setOnClickListener(l);
+        b7.setOnClickListener(l);
+        b8.setOnClickListener(l);
+        b9.setOnClickListener(l);
+        b10.setOnClickListener(l);
 
 }}
