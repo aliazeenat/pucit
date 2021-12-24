@@ -7,7 +7,8 @@
     android:background="@color/white"
     android:backgroundTint="#D5D2B9"
     tools:context=".MainActivity">
-
+    <include
+        layout="@layout/appbar"/>
     <Button
         android:id="@+id/Pink"
         android:layout_width="160dp"
