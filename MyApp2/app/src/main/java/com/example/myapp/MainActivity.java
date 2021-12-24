@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         b8  = (Button) findViewById(R.id.Grey);
         b9= (Button) findViewById(R.id.Brown);
         b10  = (Button) findViewById(R.id.Orange);
-        
+        setSupportActionBar(toolbar);
         final MediaPlayer mp1= MediaPlayer.create(getApplicationContext(), R.raw.red);
         final MediaPlayer mp2= MediaPlayer.create(getApplicationContext(), R.raw.blue);
         final MediaPlayer mp3= MediaPlayer.create(getApplicationContext(), R.raw.green);
