@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import android.media.MediaPlayer;
-
+import android.view.Menu;
 import android.view.View;
 
 
@@ -15,6 +15,11 @@ public class MainActivity extends AppCompatActivity {
     TextView txt;
     Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10;
     private Toolbar toolbar;
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+    getMenuInflater().inflate(R.menu.menu,menu);
+    return true;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
